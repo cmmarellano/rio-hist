@@ -1,4 +1,4 @@
-name: py39_riohist
+name: py37_riohist
 channels:
   - conda-forge
   - defaults
