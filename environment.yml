@@ -1,0 +1,27 @@
+name: py39_riohist
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7  # or python=3.6 if needed
+  - cython
+  - numpy>=1.10.0
+  - pytest
+  - pytest-cov
+  - setuptools>=0.9.8
+  - wheel
+  - click
+  - rasterio~=1.0
+  - matplotlib
+  - pip       # pip needs to be included to install pip-only dependencies
+  - pip:
+      - rio-mucho
+      - rio-color>=0.4
+      - coveralls>=0.4
+  - xvfbwrapper  # Provides xvfb service if needed for display in testing
+
+# Optional testing dependencies that can be installed with pip
+  - pip:
+      - coveralls
+      - rio-mucho
+      - rio-color>=0.4
